@@ -13,7 +13,7 @@ const apiKey = 'sLpPGa4bFYzaKrQJ6wUgkAd8aNlnAGeD';
 
 async function getAutoComplete(txt) {
     try {
-      const res = await Axios.get((`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apiKey}&q=${txt}`))
+      const res = await Axios.get((`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apiKey}&q=${txt}`))
       return res.data[0]
     }
     catch (err) {
@@ -23,7 +23,7 @@ async function getAutoComplete(txt) {
 
 async function getFiveDaysForcast(locKey) {
     try {
-      const res = await Axios.get((`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locKey}?apikey=${apiKey}`))
+      const res = await Axios.get((`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${locKey}?apikey=${apiKey}`))
       return res.data
     }
     catch (err) {
@@ -33,7 +33,7 @@ async function getFiveDaysForcast(locKey) {
 
 async function getCurrWeather(locKey) {
     try {
-      const res = await Axios.get((`http://dataservice.accuweather.com/currentconditions/v1/${locKey}?apikey=${apiKey}`))
+      const res = await Axios.get((`https://dataservice.accuweather.com/currentconditions/v1/${locKey}?apikey=${apiKey}`))
       return res.data
     }
     catch (err) {
@@ -43,7 +43,7 @@ async function getCurrWeather(locKey) {
 
 async function getUserCurrLocWeather(lat,lng) {
   try {
-    const res = await Axios.get((`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apiKey}&q=${lat},${lng}`))
+    const res = await Axios.get((`https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apiKey}&q=${lat},${lng}`))
     return res.data
   }
   catch (err) {
