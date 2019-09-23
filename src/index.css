@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.navbar {
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+}
+
+.favorites-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.badgeTitle {
+  width: 100%;
+}
+
+.card-img-top {
+  height: 12rem;
+  object-fit: contain;
+}
+
+.card {
+  height: auto;
+  margin: 1rem;
+}
+
+
+.favorites-list{
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.homePage {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchInput {
+  margin: 0 auto;
+  width: 30vw;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  overflow: visible;
+}
+
+.searchBtn{ 
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  background-color: #17a2b8;
+  color: #495057;
+}
+
+.addBtn{ 
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  background-color: green;
+  color: black;
+  max-height: 40px;
+  position: relative;
+  top: 5rem;
+}
+
+.removeBtn{ 
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  background-color: #6c757d;
+  color: black;
+  max-height: 40px;
+  position: relative;
+  top: 5rem;
+}
+
+.fiveDays-container { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.city-container{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('../src//imgs/cityBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  animation: changeImg 30s linear infinite;
+}
+
+.favorite-title{ 
+  cursor: pointer;
+}
+
+.card-img-top{ 
+  margin-bottom: 1rem;
+}
+
+@keyframes changeImg {
+  0%   {background-image: url(../src//imgs/cityBackground.jpg)}
+  25%  {background-image: url(../src//imgs/cityBackground2.jpeg)}
+  50%  {background-image: url(../src//imgs/cityBackground3.jpeg)}
+  75%  {background-image: url(../src//imgs/cityBackground4.jpeg)}
+  100% {background-image: url(../src//imgs/cityBackground.jpg)}
+}
+
+@media only screen and (max-width: 600px) {
+  .searchInput {
+    width: 65vw;
+  }
+
+  .city-container{ 
+    flex-direction: column;
+  }
+
+  .addBtn { 
+    position: static;
+  }
+
+  .removeBtn{ 
+    position: static;
+  }
+}
