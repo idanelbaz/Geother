@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Geother/precache-manifest.92a6ef6f375f46b3388469d60a1a5d96.js"
+  "/Geother/precache-manifest.d8c1094f933fae5fdc940b3f4112c2bf.js"
 );
 
 self.addEventListener('message', (event) => {
