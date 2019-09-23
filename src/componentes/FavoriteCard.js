@@ -25,7 +25,7 @@ goToFavoriteItem=()=> {
         return (
             <div>
                 {city.currWeather[0] &&
-                    <Card title={city.cityName} key={city._id} style={{ width: '12rem', height: '18rem' }}>
+                    <Card title={city.cityName} key={city._id} style={{ width: '12rem', height: '19rem' }}>
                         <Card.Body>
                             <Card.Title className="favorite-title" onClick={this.goToFavoriteItem} >{city.cityName},{city.countryName}</Card.Title>
                         </Card.Body>
