@@ -9,7 +9,7 @@ getPosition,
 getUserCurrLocWeather,
 }
 
-const apiKey = 'sLpPGa4bFYzaKrQJ6wUgkAd8aNlnAGeD';
+const apiKey = 'knnG3d5le7I9GPG1UGpGIpqtXXVXht5D';
 
 async function getAutoComplete(txt) {
     try {
