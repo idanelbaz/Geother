@@ -17,6 +17,7 @@ class homePage extends Component {
     };
 
     async componentDidMount() {
+        this.searchInput.focus();
         const { dispatch } = this.props
         try {
             await dispatch(getUserLoc())
@@ -108,7 +109,7 @@ class homePage extends Component {
             <div className="homePage">
                  <ToastContainer />
                 <form onSubmit={this.handleSubmit}>
-                    <input className="searchInput" required type="text" name="txt"  onChange={this.handleSearch} placeholder="Search weather in..."></input>
+                    <input ref={(searchIn) => this.searchInput = searchIn} className="searchInput" required type="text" name="txt"  onChange={this.handleSearch} placeholder="Search weather in..."></input>
                     <button title="Search for a specific city" className="searchBtn">Search</button> 
                 </form>
                 { currCityWeather !== null &&
