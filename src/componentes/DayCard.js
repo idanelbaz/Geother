@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Card} from 'react-bootstrap';
 
-export default class favortieItemCard extends Component {
+ const favortieItemCard = props => {
 
-    render() {
-        const {day, weekDay, celsius}  = this.props;
+        const {day, weekDay, celsius}  = props;
         const celTempMax = (day.Temperature.Maximum.Value - 32) * 5/9 
         const celTempMin = (day.Temperature.Minimum.Value - 32) * 5/9
         var dayIcon;
@@ -27,5 +26,6 @@ export default class favortieItemCard extends Component {
                 
             </Card>
         )
-    }
 }
+
+export default favortieItemCard;
