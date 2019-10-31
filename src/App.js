@@ -8,23 +8,19 @@ import './App.css';
 
 
 class App extends Component {
-    
     render() {
         return (
             <div className="App">
-
                 <Router>
                     <Header></Header>
                     <Switch>
-                        <Route path="/" exact component={homePage}/>
-                        <Route path="/favorites" component={favoritesList}/>
+                        <Route path="/" exact component={homePage} />
+                        <Route path="/favorites" component={favoritesList} />
                     </Switch>
                 </Router>
             </div>
         )
-
     }
-
 }
 
 export default App;

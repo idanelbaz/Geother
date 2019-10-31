@@ -9,9 +9,9 @@ import { createLogger } from 'redux-logger'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import reducer from './store/reducers' 
+import reducer from './store/reducers'
 
-const middleware = [ thunk ]
+const middleware = [thunk]
 if (process.env.NODE_ENV !== 'production') {
   middleware.push(createLogger())
 }
@@ -20,7 +20,7 @@ const store = createStore(
   applyMiddleware(...middleware)
 )
 ReactDOM.render(<Provider store={store}>
-    <App /></Provider>, document.getElementById('root'));
+  <App /></Provider>, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
@@ -28,7 +28,7 @@ ReactDOM.render(<Provider store={store}>
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.register();
 
-window.addEventListener( 'beforeinstallprompt', ( e ) => {
+window.addEventListener('beforeinstallprompt', (e) => {
   console.log('beforeinstallprompt event has fired')
   e.prompt()
 });

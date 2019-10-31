@@ -1,7 +1,7 @@
 import types from "../types";
 
 export default function
-  postsReducer(state = { favorites:[], currFavorite:null }, action) {
+  postsReducer(state = { favorites: [], currFavorite: null }, action) {
   switch (action.type) {
     case types.GET_FAVORITES:
       return { ...state, favorites: action.data };

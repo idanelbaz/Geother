@@ -44,7 +44,7 @@ button {
 }
 
 
-.favorites-list{
+.favorites-list {
   margin: 0 auto;
   padding: 20px;
 }
@@ -71,14 +71,14 @@ button {
   overflow: visible;
 }
 
-.searchBtn{ 
+.searchBtn {
   border-radius: .25rem;
   padding: .375rem .75rem;
   background-color: #17a2b8;
   color: #495057;
 }
 
-.addBtn{ 
+.addBtn {
   border-radius: .25rem;
   padding: .375rem .75rem;
   background-color: green;
@@ -88,7 +88,7 @@ button {
   top: 5rem;
 }
 
-.removeBtn{ 
+.removeBtn {
   border-radius: .25rem;
   padding: .375rem .75rem;
   background-color: #6c757d;
@@ -98,14 +98,14 @@ button {
   top: 5rem;
 }
 
-.fiveDays-container { 
+.fiveDays-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.city-container{ 
+.city-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -117,20 +117,34 @@ button {
   animation: changeImg 30s linear infinite;
 }
 
-.favorite-title{ 
+.favorite-title {
   cursor: pointer;
 }
 
-.card-img-top{ 
+.card-img-top {
   margin-bottom: 1rem;
 }
 
 @keyframes changeImg {
-  0%   {background-image: url(../src//imgs/cityBackground.jpg)}
-  25%  {background-image: url(../src//imgs/cityBackground2.jpeg)}
-  50%  {background-image: url(../src//imgs/cityBackground3.jpeg)}
-  75%  {background-image: url(../src//imgs/cityBackground4.jpeg)}
-  100% {background-image: url(../src//imgs/cityBackground.jpg)}
+  0% {
+    background-image: url(../src//imgs/cityBackground.jpg)
+  }
+
+  25% {
+    background-image: url(../src//imgs/cityBackground2.jpeg)
+  }
+
+  50% {
+    background-image: url(../src//imgs/cityBackground3.jpeg)
+  }
+
+  75% {
+    background-image: url(../src//imgs/cityBackground4.jpeg)
+  }
+
+  100% {
+    background-image: url(../src//imgs/cityBackground.jpg)
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,15 +152,15 @@ button {
     width: 65vw;
   }
 
-  .city-container{ 
+  .city-container {
     flex-direction: column;
   }
 
-  .addBtn { 
+  .addBtn {
     position: static;
   }
 
-  .removeBtn{ 
+  .removeBtn {
     position: static;
   }
 }
